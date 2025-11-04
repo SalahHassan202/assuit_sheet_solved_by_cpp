@@ -1,19 +1,36 @@
-// F. Adding Bits
+//  F. Adding Bits
 
-# include <iostream>
 #include <bits/stdc++.h>
-using namespace std ;
-int main ()
+#define ll long long
+#define fast                     \
+    ios::sync_with_stdio(false); \
+    cin.tie(0);                  \
+    cout.tie(0);
+using namespace std;
+
+void solve()
 {
 
-int a, b;
+ll a, b;
 cin >>a>>b;
- int c=a^ b;  // ^    ====> XOR 
+ll c=a^ b;  // ^    ====> XOR 
 cout<< c<<endl;
 
-
-
- return 0;
 }
+
+int main()
+{
+    fast;
+
+    ll t = 1;
+    // cin >> t;
+    while (t--)
+    {
+        solve();
+    }
+
+    return 0;
+}
+
 
 
