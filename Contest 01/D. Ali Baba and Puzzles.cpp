@@ -1,46 +1,50 @@
 // D. Ali Baba and Puzzles
 
-# include <iostream>
 #include <bits/stdc++.h>
-using namespace std ;
-int main ()
+#define ll long long
+#define fast                     \
+    ios::sync_with_stdio(false); \
+    cin.tie(0);                  \
+    cout.tie(0);
+using namespace std;
+
+void solve()
 {
 
-long long a,b,c,d;
+ll a,b,c,d;
 cin >>a>>b>>c>>d;
 
 if((a+b*c)==d)
-{
-    cout<<"YES"<<endl;
-}
+cout<<"YES"<<endl;
 else if((a+b-c)==d)
-{
-    cout<<"YES"<<endl;
-}
+cout<<"YES"<<endl;
 else if((a-b+c)==d)
-{
-    cout<<"YES"<<endl;
-}
+cout<<"YES"<<endl;
 else if((a-b*c)==d)
-{
-    cout<<"YES"<<endl;
-}
+cout<<"YES"<<endl;
 else if((a*b+c)==d)
-{
-    cout<<"YES"<<endl;
-}
+cout<<"YES"<<endl;
 else if((a*b-c)==d)
-{
-    cout<<"YES"<<endl;
-}
+cout<<"YES"<<endl;
 else 
+cout <<"NO"<<endl;
+
+
+}
+
+int main()
 {
-    cout <<"NO"<<endl;
+    fast;
+
+    ll t = 1;
+    // cin >> t;
+    while (t--)
+    {
+        solve();
+    }
+
+    return 0;
 }
 
-
-
- return 0;
-}
 
 
