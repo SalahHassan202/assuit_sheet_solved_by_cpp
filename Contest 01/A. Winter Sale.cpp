@@ -1,8 +1,14 @@
 // A. Winter Sale
-# include <iostream>
+
 #include <bits/stdc++.h>
-using namespace std ;
-int main ()
+#define ll long long
+#define fast                     \
+    ios::sync_with_stdio(false); \
+    cin.tie(0);                  \
+    cout.tie(0);
+using namespace std;
+
+void solve()
 {
 
 /*
@@ -22,10 +28,7 @@ int main ()
 
 */
 
-
-
-double x;   // the discount percentage
-double y ;  // the price of t-shirt after discount
+double x , y ;   // x==>  the discount percentage    // y ==> the price of t-shirt after discount
 cin>> x>>y ;
 double z = 100-x ;    //is the percentage  discount 
 double w = y/z ;    // this is the percentage 
@@ -34,6 +37,18 @@ double p= v + y;    // the price of t-shirt before discount
       
  cout <<fixed<<setprecision(2)<<p<<endl;
 
+}
 
- return 0;
+int main()
+{
+    fast;
+
+    ll t = 1;
+    // cin >> t;
+    while (t--)
+    {
+        solve();
+    }
+
+    return 0;
 }
