@@ -1,31 +1,39 @@
 // B. Memo and Momo
-# include <iostream>
+
 #include <bits/stdc++.h>
-using namespace std ;
-int main ()
+#define ll long long
+#define fast                     \
+    ios::sync_with_stdio(false); \
+    cin.tie(0);                  \
+    cout.tie(0);
+using namespace std;
+
+void solve()
 {
 
-long long a ,b,k;    // a is memo  ,,,   b is momo  ,,,   k is the Divisor
-
-cin>>a>>b>>k;
+ll a ,b,k;     cin>>a>>b>>k;
 
 if(a%k==0  && b%k==0)
-{
-    cout<<"Both"<<endl;
-}
+cout<<"Both"<<endl;
 else if (a%k ==0 && b%k !=0)
-{
-    cout<<"Memo"<<endl;
-}
+cout<<"Memo"<<endl;
 else if (a%k !=0 && b%k ==0)
-{
-    cout<<"Momo"<<endl;
-}
+cout<<"Momo"<<endl;
 else 
+cout<<"No One"<<endl;
+
+}
+
+int main()
 {
-    cout<<"No One"<<endl;
-}    
+    fast;
 
+    ll t = 1;
+    // cin >> t;
+    while (t--)
+    {
+        solve();
+    }
 
- return 0;
+    return 0;
 }
