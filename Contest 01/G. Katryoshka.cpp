@@ -1,13 +1,17 @@
-// G. Katryoshka
+//  G. Katryoshka
 
-# include <iostream>
 #include <bits/stdc++.h>
-using namespace std ;
-int main ()
+#define ll long long
+#define fast                     \
+    ios::sync_with_stdio(false); \
+    cin.tie(0);                  \
+    cout.tie(0);
+using namespace std;
+
+void solve()
 {
 
 /*
-
  1. Two eyes and one body.
  2. Two eyes, one mouth, and one body.      
  3. One eye, one mouth, and one body.
@@ -16,23 +20,36 @@ int main ()
  because this is the same statement with difference in eyes 
 
 */
-long long e , m ,b;   // e ==> eyes   ,   m==> mouths   ,   b ==> bodys
+ll e , m ,b;   // e ==> eyes   ,   m==> mouths   ,   b ==> bodys
 cin>>e>>m>>b ;
-long long res =0;   // result 
-long long x = min ({e ,m,b});       //  minimum
+ll  res =0;  
+ll x = min ({e ,m,b});       
 
-res+=x ;  //res=res+x
+res+=x ; 
 
-e-=x;    // e=e-x
-m-=x;    // m=m-x
-b-=x;    // b=b-x
-
+e-=x;    
+m-=x;   
+b-=x;    
 x=min(e/2 , b);
-res+=x;   //res=res+x
+res+=x;   
 
 cout<<res<<endl;
 
- return 0;
 }
+
+int main()
+{
+    fast;
+
+    ll t = 1;
+    // cin >> t;
+    while (t--)
+    {
+        solve();
+    }
+
+    return 0;
+}
+
 
 
