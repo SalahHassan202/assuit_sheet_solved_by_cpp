@@ -1,12 +1,18 @@
 // C. Choose Elements
-#include <iostream>
-#include<algorithm>
+
+#include <bits/stdc++.h>
+#define ll long long
+#define fast                     \
+    ios::sync_with_stdio(false); \
+    cin.tie(0);                  \
+    cout.tie(0);
 using namespace std;
-int main()
+
+void solve()
 {
-    long long  size , num1 , sum =0;
+    ll  size , num1 , sum =0;
     cin>>size>>num1;
-    long long  arr[size];
+    ll  arr[size];
     for(int i =0 ; i<size ;i++)
     {
         cin>>arr[i];
@@ -26,8 +32,18 @@ int main()
     }
 
 cout<<sum<<endl;
+}
 
-    return 0 ;
+int main()
+{
+    fast;
+    ll t = 1;
+    // cin >> t;
+    while (t--)
+    {
+        solve();
+    }
+    return 0;
 }
 
 
