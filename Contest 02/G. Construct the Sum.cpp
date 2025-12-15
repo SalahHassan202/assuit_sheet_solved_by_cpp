@@ -1,24 +1,29 @@
 // G. Construct the Sum
-#include<iostream>
+
+#include <bits/stdc++.h>
+#define ll long long
+#define fast                     \
+    ios::sync_with_stdio(false); \
+    cin.tie(0);                  \
+    cout.tie(0);
 using namespace std;
 int res[1000009];
-int main()
+void solve()
 {
-	
-	long long counter; 
+    ll counter; 
 	cin>>counter;
-	long long cou = 0;
+	ll cou = 0;
 
 	for(int i=0;i<counter;i++)
 	{
-		long long num1,num2;
+		ll num1,num2;
 		cin>>num1>>num2;
 
 		if(num1*(num1+1) / 2 < num2)    // n*(n+1) / 2    5*(5+1)/2 == 15    5 4 3 2 1
 		{
 			cout<<-1;
 		} else {
-			long long sum = 0; 
+			ll sum = 0; 
 			
 			for(int z=num1;z>=1;z--)
 			{
@@ -46,5 +51,16 @@ int main()
 		cou = 0;
 	}
 
-	return 0 ;
+}
+
+int main()
+{
+    fast;
+    ll t = 1;
+    // cin >> t;
+    while (t--)
+    {
+        solve();
+    }
+    return 0;
 }
