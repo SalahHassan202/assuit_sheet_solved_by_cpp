@@ -1,8 +1,14 @@
 // E. Alternating Array
-#include <iostream>
-#include<algorithm>
+
+#include <bits/stdc++.h>
+#define ll long long
+#define fast                     \
+    ios::sync_with_stdio(false); \
+    cin.tie(0);                  \
+    cout.tie(0);
 using namespace std;
-int main()
+
+void solve()
 {
     // 3   ===> size of array 
     // 3 4 2 
@@ -47,16 +53,20 @@ int main()
             temp2 =arr2[i];
         }
     }
-    if(counter1 < counter2)
-    {
-        cout<<counter1<<endl;
-    }
-    else
-    {
-        cout<<counter2<<endl;
-    }
-
-    return 0 ;
+    if(counter1 < counter2) cout<<counter1<<endl;
+    else  cout<<counter2<<endl;
+  
 }
 
+int main()
+{
+    fast;
+    ll t = 1;
+    // cin >> t;
+    while (t--)
+    {
+        solve();
+    }
+    return 0;
+}
 
